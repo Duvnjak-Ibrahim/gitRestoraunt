@@ -1,9 +1,9 @@
-// import { menuArray } from "./data.js"
-// let   feed=``
-// let orderp1 =``
-// let orderp2 =``
-// let orderChecker=[]
-// let allfeed =``
+import { menuArray } from "./data.js"
+let   feed=``
+let orderp1 =``
+let orderp2 =``
+let orderChecker=[]
+let allfeed =``
 
 document.addEventListener("click",function(e){
     if(e.target.dataset.plus){
