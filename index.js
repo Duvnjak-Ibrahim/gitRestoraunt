@@ -71,19 +71,19 @@ function getFeedHtml(){
             </div>
             
             `
-            menuArray.forEach(function(item){
+            menuArray.forEach(function(items){
             
            
             
             
         feed+=`<div class="box">
-            <div class="s-div"> ${item.emoji}</div>
+            <div class="s-div"> ${items.emoji}</div>
             <div class="l-div">
-            <h1>${item.name}</h1>
-            <p>${item.ingredients}</p>
-            <p class="price">${item.price}$</p>
+            <h1>${items.name}</h1>
+            <p>${items.ingredients}</p>
+            <p class="price">${items.price}$</p>
             </div>
-            <button id="plus-btn" data-plus="${item.id}">+</button>
+            <button id="plus-btn" data-plus="${items.id}">+</button>
             </div>
             </div>
             
