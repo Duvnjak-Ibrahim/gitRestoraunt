@@ -9,14 +9,14 @@ export const menuArray = [
     {
         name: "Fries",
         ingredients: ["salt", "potato", "mayyonaise","ketchup"],
-        id: 0,
+        id: 2,
         price: 18,
         emoji: "🍟"
     },
         {
         name: "Soup",
         ingredients: ["salt, carrot, salat, beans"],
-        id: 2,
+        id: 3,
         price: 15,
         emoji:"🍲"
     }
