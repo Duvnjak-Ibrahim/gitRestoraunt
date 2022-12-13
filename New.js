@@ -47,7 +47,9 @@ function renderContent(){
 let i = 0
 while(i<6){
     i++
-    let sum = (i*2) + (i*3)
+    let sum = (i*3) - (i*2)
     console.log(sum);
 
 }
+
+console.log("made antiFunction");
