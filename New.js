@@ -44,6 +44,8 @@ function renderContent(){
     
 }renderContent()
 
-
-console.log("Branch");
-console.log("New");
+let i = 0
+while(i<6){
+    i++
+    console.log(i);
+}
