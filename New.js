@@ -45,4 +45,5 @@ function renderContent(){
 }renderContent()
 
 
-console.log("pullGitNew this is");
+console.log("Branch");
+console.log("New");
