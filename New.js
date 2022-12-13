@@ -47,5 +47,7 @@ function renderContent(){
 let i = 0
 while(i<6){
     i++
-    console.log(i);
+    let sum = (i*2) + (i*3)
+    console.log(sum);
+
 }
