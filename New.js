@@ -43,3 +43,6 @@ function renderContent(){
     })
     
 }renderContent()
+
+
+console.log("pullGitNew this is");
