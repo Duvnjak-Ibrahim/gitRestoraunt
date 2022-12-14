@@ -71,6 +71,22 @@ p{
     text-shadow: 5px 5px 5px black;
 }
 
+/* * order */
+#order{
+    margin: 10px;
+    
+}
+.priceList{
+    display: flex;
+    justify-content: space-between;
+}
+.priceList p,
+.priceList h1
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
      /* menu array looped */
 .box{
     display: flex;
