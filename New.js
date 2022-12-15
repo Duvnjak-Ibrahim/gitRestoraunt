@@ -27,6 +27,7 @@ function renderContent(){
 }renderContent()
 
 
+
 // HANDLE PLUS BTN FUNCTION
 function handlePlusButtons(itemId){{
 
@@ -47,7 +48,6 @@ function handlePlusButtons(itemId){{
     })
     // console.log(typeof itemId.ingredients,itemId.ingredients)
 }}
-
 
 
 
