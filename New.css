@@ -70,15 +70,18 @@ p{
 .textHeader p{
     text-shadow: 5px 5px 5px black;
 }
-
+/* **** */
+.hidden{
+    display: none;
+}
 /* * order */
 #order{
-    margin: 10px;
-    
+    margin:10px;
 }
 .priceList{
     display: flex;
     justify-content: space-between;
+    margin: 0.3rem 0.5rem;
 }
 .priceList p,
 .priceList h1
@@ -90,7 +93,7 @@ p{
      /* menu array looped */
 .box{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -138,6 +141,20 @@ p{
     background: white;
     
     
+}
+.buyBtn{
+    display: block;
+    width: 90%;
+    height: 3rem;
+    margin: 0.5rem auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background:greenyellow;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.finalPrice{
+    justify-content: space-between;
 }
     /* order box */
 
