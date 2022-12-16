@@ -3,7 +3,13 @@ import { menuArray } from "./NewData.js"
 const finalPrice = document.querySelector(".finalPrice")
 let priceAll = document.querySelector(".finalPrice p") 
 const buyBtn = document.querySelector(".buyBtn")
-
+let a = 1
+let b = 1
+let c = 1
+let choiceArray =[]
+let choice1 = []
+let choice2 = []
+let choice3 = []
 
 // DOCUMNET EVENTLISTENERS
 document.addEventListener("click",function(e){
@@ -40,31 +46,62 @@ function handlePlusButtons(itemId){{
     finalPrice.classList.remove("hidden")
     buyBtn.classList.remove("hidden")
 })()
-    console.log(typeof itemId,itemId)
+    // console.log(typeof itemId,itemId)
 // BASSICLY I COMPARED "itemID" WITH "MenuArray.id" ALSO CALLED
 // "items.id" IN FILTER FUNCTION THEN JUST INNERHTML-ed 
 // task : play with css make it beautiful (a bit),
 // then make it work
-let a = 0
-let b = 0
-let c = 0
-    menuArray.filter(function(items){
+
+menuArray.filter(function(items){
+
+    function printChoice(num,vab){
+       
+                document.querySelector("#boxes").innerHTML+=`
+                <div class="priceList">
+                <h1>${items.name} ${vab}x</h1>
+                <p>${items.price}$</p>
+                </div>
+                `
+                choiceArray.push(num)
+                console.log(!choiceArray.includes(num));
+                console.log(typeof items.id,items.id);
         
-        if (itemId == items.id){
-            // IF items.id !== DO innerHTML 
-            // and add a print tracker
-            // z.b (a)
-            document.querySelector("#boxes").innerHTML+=`
-            <div class="priceList">
-            <h1>${items.name} 1x</h1>
-            <p>${items.price}$</p>
-            </div>
-            `
+    
+    }
+    // THIS IS WRONG ANALOGY ,TRY SMTH ELSE BRUV,
+    // MAYBE TRY TO DO SMTH WITH HTML THEN ADD HIDDEN CLASSES
+        // if(a === 1){
+
+        //     if(items.id === 1){
+        //         a++
+        //        return printChoice(1,a)
+        //     }
+        // }else if(b === 1){
+
+        //     if(items.id === 2){
+        //         b++
+        //       return  printChoice(1,b)
+        //     }
+        //     }else if (c === 1){
+
+        //         if(items.id === 3){
+        //             c++
+        //           return  printChoice(1,c)
+        //         }
+        // }
+        
+        if (Number(itemId) === Number(items.id)){
+         
+            // **** MAKING IT ONLY SPAWN ONCE 
+          
+           // **** HERE ARE FINISHED if elses ,up 
         }
     })
     // console.log(typeof itemId.ingredients,itemId.ingredients)
+    console.log(`${a}a  ${b}b  ${c}c`);
+    console.log(choiceArray);
 }}
 
-
+// SPAN WITH CLASS DOMMING 
 
 
