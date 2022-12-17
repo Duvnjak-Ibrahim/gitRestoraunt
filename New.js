@@ -64,6 +64,9 @@ function handlePlusButtons(itemId){
 
 // **** MAKING IT ONLY SPAWN ONCE 
 
+// BASICLY 
+// CHEKING ITEMID (FROM + BTN DATA) WITH NUMBERS 1,2,3 IF THEY MATCH
+// CEARTAIN ITEM WILL GET SPAWN / INCREASED IN VALUE
 if (Number(itemId) === 1){
 
  list1.classList.remove("hidden")
@@ -98,9 +101,21 @@ console.log(a,b,c);
 
 }
 
-
+// *********
+// REMOVE BTN 1 
 handleRemoveBtn1.addEventListener("click",function(){
-  if(a !== 0){
+
+ if (a === 1){
+    sum -= 19
+    a--
+    price1= price1 - 19
+    span1.textContent = a
+    p1.textContent= `${price1}$`
+  finalNum.textContent=`${sum}$`
+  list1.classList.add("hidden")
+
+}
+  else if(a !== 0){
       sum -= 19
       a--
       price1= price1 - 19
@@ -108,28 +123,73 @@ handleRemoveBtn1.addEventListener("click",function(){
       p1.textContent= `${price1}$`
     finalNum.textContent=`${sum}$`
 
-    }
+  }
+
+  if(a === 0 && b === 0 && c === 0){
+    finalPrice.classList.add("hidden")
+    buyBtn.classList.add("hidden")
+}
 })
+// **********
+// REMOVE BTN2
 handleRemoveBtn2.addEventListener("click",function(){
- if(b !== 0){
-    sum -= 18
-     b--
-     price2= price2 - 18
-     span2.textContent = b
-     p2.textContent= `${price2}$`
-    finalNum.textContent=`${sum}$`
+
+     if(b === 1){
+        sum -= 18
+        b--
+        price2= price2 - 18
+        span2.textContent = b
+        p2.textContent= `${price2}$`
+        finalNum.textContent=`${sum}$`
+        list2.classList.add("hidden")
     }
+        else if(b !== 0){
+            sum -= 18
+            b--
+            price2= price2 - 18
+            span2.textContent = b
+            p2.textContent= `${price2}$`
+            finalNum.textContent=`${sum}$`
+            
+        }
+         if(a === 0 && b === 0 && c === 0){
+            finalPrice.classList.add("hidden")
+            buyBtn.classList.add("hidden")
+        }
+       
+           
 })
+// **********
+// REMOVE BTN 3
 handleRemoveBtn3.addEventListener("click",function(){
-    if(c !== 0){
+   
+
+    if(c === 1){
         sum -= 15
         c--
         price3= price3 - 15
         span3.textContent = c
         p3.textContent= `${price3}$`
-    finalNum.textContent=`${sum}$`
+     finalNum.textContent=`${sum}$`
+     list3.classList.add("hidden")
+
+    }
+
+    else if(c !== 0){
+        sum -= 15
+        c--
+        price3= price3 - 15
+        span3.textContent = c
+        p3.textContent= `${price3}$`
+     finalNum.textContent=`${sum}$`
+    }
+   if(a === 0 && b === 0 && c === 0){
+        finalPrice.classList.add("hidden")
+        buyBtn.classList.add("hidden")
     }
 })
+
+
 
 
 // SPAN WITH CLASS DOMMING 
