@@ -1,15 +1,29 @@
 import { menuArray } from "./NewData.js"
 // POINTING DATA FROM DOM OR HTML idk
 const finalPrice = document.querySelector(".finalPrice")
-let priceAll = document.querySelector(".finalPrice p") 
 const buyBtn = document.querySelector(".buyBtn")
-let a = 1
-let b = 1
-let c = 1
-let choiceArray =[]
-let choice1 = []
-let choice2 = []
-let choice3 = []
+const list1 = document.querySelector(".list1")
+const list2 = document.querySelector(".list2")
+const list3 = document.querySelector(".list3")
+const handleRemoveBtn1 = document.querySelector(".remove1")
+const handleRemoveBtn2 = document.querySelector(".remove2")
+const handleRemoveBtn3 = document.querySelector(".remove3")
+const span1 = document.querySelector(".span1")
+const span2 = document.querySelector(".span2")
+const span3 = document.querySelector(".span3")
+const p1 = document.querySelector(".list1 p")
+const p2 = document.querySelector(".list2 p")
+const p3 = document.querySelector(".list3 p")
+const finalNum = document.querySelector(".finalNum")
+let a = 0
+let b = 0
+let c = 0
+let price1 = 0
+let price2 = 0
+let price3 = 0
+let sum = 0
+let priceAll = document.querySelector(".finalPrice p") 
+
 
 // DOCUMNET EVENTLISTENERS
 document.addEventListener("click",function(e){
@@ -37,70 +51,86 @@ function renderContent(){
     
 }renderContent()
 
-finalPrice.classList.add("hidden")
-buyBtn.classList.add("hidden")
+
 
 // HANDLE PLUS BTN FUNCTION
-function handlePlusButtons(itemId){{
+function handlePlusButtons(itemId){
+    // BUY CONTAINER POP UP ,HIDDEN CLASS REMOVED
 (function (){
     finalPrice.classList.remove("hidden")
     buyBtn.classList.remove("hidden")
-})()
-    // console.log(typeof itemId,itemId)
-// BASSICLY I COMPARED "itemID" WITH "MenuArray.id" ALSO CALLED
-// "items.id" IN FILTER FUNCTION THEN JUST INNERHTML-ed 
-// task : play with css make it beautiful (a bit),
-// then make it work
-
-menuArray.filter(function(items){
-
-    function printChoice(num,vab){
-       
-                document.querySelector("#boxes").innerHTML+=`
-                <div class="priceList">
-                <h1>${items.name} ${vab}x</h1>
-                <p>${items.price}$</p>
-                </div>
-                `
-                choiceArray.push(num)
-                console.log(!choiceArray.includes(num));
-                console.log(typeof items.id,items.id);
-        
     
+})()
+
+// **** MAKING IT ONLY SPAWN ONCE 
+
+if (Number(itemId) === 1){
+
+ list1.classList.remove("hidden")
+
+ sum += 19
+ a++
+ price1 = price1 + 19
+ span1.textContent = a
+ p1.textContent= `${price1}$`
+ finalNum.textContent=`${sum}$`
+}else if (Number(itemId) === 2){
+
+    sum += 18
+    list2.classList.remove("hidden")
+    b++
+    price2 = price2 + 18
+    span2.textContent = b
+    p2.textContent= `${price2}$`
+    finalNum.textContent=`${sum}$`
+}else if (Number(itemId) === 3){
+
+    sum += 15
+    list3.classList.remove("hidden")
+    c++
+    price3 = price3 + 15
+    span3.textContent = c
+    p3.textContent= `${price3}$`
+    finalNum.textContent=`${sum}$`
+}
+console.log(a,b,c);
+   
+
+}
+
+
+handleRemoveBtn1.addEventListener("click",function(){
+  if(a !== 0){
+      sum -= 19
+      a--
+      price1= price1 - 19
+      span1.textContent = a
+      p1.textContent= `${price1}$`
+    finalNum.textContent=`${sum}$`
+
     }
-    // THIS IS WRONG ANALOGY ,TRY SMTH ELSE BRUV,
-    // MAYBE TRY TO DO SMTH WITH HTML THEN ADD HIDDEN CLASSES
-        // if(a === 1){
+})
+handleRemoveBtn2.addEventListener("click",function(){
+ if(b !== 0){
+    sum -= 18
+     b--
+     price2= price2 - 18
+     span2.textContent = b
+     p2.textContent= `${price2}$`
+    finalNum.textContent=`${sum}$`
+    }
+})
+handleRemoveBtn3.addEventListener("click",function(){
+    if(c !== 0){
+        sum -= 15
+        c--
+        price3= price3 - 15
+        span3.textContent = c
+        p3.textContent= `${price3}$`
+    finalNum.textContent=`${sum}$`
+    }
+})
 
-        //     if(items.id === 1){
-        //         a++
-        //        return printChoice(1,a)
-        //     }
-        // }else if(b === 1){
-
-        //     if(items.id === 2){
-        //         b++
-        //       return  printChoice(1,b)
-        //     }
-        //     }else if (c === 1){
-
-        //         if(items.id === 3){
-        //             c++
-        //           return  printChoice(1,c)
-        //         }
-        // }
-        
-        if (Number(itemId) === Number(items.id)){
-         
-            // **** MAKING IT ONLY SPAWN ONCE 
-          
-           // **** HERE ARE FINISHED if elses ,up 
-        }
-    })
-    // console.log(typeof itemId.ingredients,itemId.ingredients)
-    console.log(`${a}a  ${b}b  ${c}c`);
-    console.log(choiceArray);
-}}
 
 // SPAN WITH CLASS DOMMING 
 

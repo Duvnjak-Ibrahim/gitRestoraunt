@@ -100,6 +100,19 @@ p{
     width: 90%;
     margin: 0 auto;
 }
+.remove1,
+.remove2,
+.remove3{
+    
+    font-size: 1.15rem;
+    font-weight:bold;
+    font-family: 'Smythe', cursive;
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+
 .s-div{
     width: 20%;
     margin-left:10px ;
