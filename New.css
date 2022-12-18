@@ -15,7 +15,7 @@ body{
     width: 100%;
     background:gray;
     min-height: 100vh;
-   
+   position: relative;
     
    
 }
@@ -112,6 +112,17 @@ p{
     background: none;
 }
 
+.remove1:hover,
+.remove2:hover,
+.remove3:hover{
+    color: red;
+}
+.remove1:active,
+.remove2:active,
+.remove3:active{
+    font-size: 1rem;
+}
+
 
 .s-div{
     width: 20%;
@@ -165,6 +176,10 @@ p{
     background:greenyellow;
     font-size: 1.2rem;
     font-weight: bold;
+}
+.buyBtn:active{
+    width: 92%;
+    height: 3.2rem;
 }
 .finalPrice{
     justify-content: space-between;
@@ -266,4 +281,67 @@ p{
 }
 .total-price p{
     letter-spacing: 1px;
+}
+
+.form{
+    position: absolute;
+    top:25%;
+    left: 10%;
+    
+    z-index: 4;
+    width: 280px;
+    height: 310px;
+    background: white;
+
+    border-radius: 2px;
+    box-shadow: 0 0 5px black;
+}
+.form h1{
+    text-align: center;
+    margin: 26px 0;
+    font-weight: bold;
+}
+
+.form input{
+    width: 85%;
+    margin: 10px auto;
+    padding:10px 10px;
+    display: block;
+    font-size: 15px;
+}
+.form button{
+    display: block;
+    width: 93.5%;
+    margin: 10px auto;
+    padding:10px 40px;
+    background:#16DB99;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.form button:active{
+    width: 95%;
+    padding: 12px;
+}
+
+.blackish{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.thanks{
+    text-align: center;
+    font-size: 15px;
+    /* background:#ECFDF5; */
+    color:#065F46;
+    padding: 5px;
+    margin:10px;
 }

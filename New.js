@@ -15,6 +15,11 @@ const p1 = document.querySelector(".list1 p")
 const p2 = document.querySelector(".list2 p")
 const p3 = document.querySelector(".list3 p")
 const finalNum = document.querySelector(".finalNum")
+const blackish = document.querySelector(".blackish")
+const form = document.querySelector(".form")
+const payBtn = document.querySelector(".form button")
+const spanName = document.querySelector(".loginName")
+const thanks = document.querySelector(".thanks")
 let a = 0
 let b = 0
 let c = 0
@@ -68,6 +73,7 @@ function handlePlusButtons(itemId){
 // CHEKING ITEMID (FROM + BTN DATA) WITH NUMBERS 1,2,3 IF THEY MATCH
 // CEARTAIN ITEM WILL GET SPAWN / INCREASED IN VALUE
 if (Number(itemId) === 1){
+    thanks.classList.add("hidden")
 
  list1.classList.remove("hidden")
 
@@ -78,6 +84,7 @@ if (Number(itemId) === 1){
  p1.textContent= `${price1}$`
  finalNum.textContent=`${sum}$`
 }else if (Number(itemId) === 2){
+    thanks.classList.add("hidden")
 
     sum += 18
     list2.classList.remove("hidden")
@@ -87,6 +94,7 @@ if (Number(itemId) === 1){
     p2.textContent= `${price2}$`
     finalNum.textContent=`${sum}$`
 }else if (Number(itemId) === 3){
+    thanks.classList.add("hidden")
 
     sum += 15
     list3.classList.remove("hidden")
@@ -189,8 +197,30 @@ handleRemoveBtn3.addEventListener("click",function(){
     }
 })
 
+buyBtn.addEventListener("click",function(){
+    form.classList.remove("hidden")
+    blackish.classList.remove("hidden")
+})
 
 
+
+form.addEventListener("submit",function(e){
+    e.preventDefault()
+    form.classList.add("hidden")
+    blackish.classList.add("hidden")
+    list1.classList.add("hidden")
+    list1.classList.add("hidden")
+    list2.classList.add("hidden")
+    list3.classList.add("hidden")
+    finalPrice.classList.add("hidden")
+    buyBtn.classList.add("hidden")
+    const loginFormData = new FormData(form)
+    const userName = loginFormData.get("urName")
+    console.log(userName);
+    spanName.textContent=userName
+    thanks.classList.remove("hidden")
+    form.value =""
+})
 
 // SPAN WITH CLASS DOMMING 
 
