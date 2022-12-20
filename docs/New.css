@@ -2,18 +2,28 @@ body{
     margin: 0;
     padding: 0px;
     font-family: 'Smythe', cursive;
-    background: lightblue;
+    background-image: url("burger.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    /* object-fit: cover; */
+    background-color: rgb(36, 20, 6);
+    background-blend-mode:soft-light;
+    /* filter: blur(1px); */
+    
+    background-size:100%;
+    background-position: center;
     max-width: 350px;
     max-height: 100%;
     margin: 0 auto;
-    
+    color: rgb(230, 213, 213);
 
 }
 .container{
-    margin: 0;
+   
     padding-bottom: 10px;
-    width: 100%;
-    background:gray;
+    width: 400px;
+    background:rgb(51, 25, 0);
     min-height: 100vh;
    position: relative;
     
@@ -41,7 +51,7 @@ p{
     background-size:100%;
     background-position: center;
     object-fit: cover;
-    width: 310px;
+    width: 90%;
     height: 80px;
     color: whitesmoke;
     padding: 20px;
@@ -110,6 +120,7 @@ p{
     padding: 10px;
     border: none;
     background: none;
+    color: rgb(241, 58, 58);
 }
 
 .remove1:hover,
@@ -121,6 +132,8 @@ p{
 .remove2:active,
 .remove3:active{
     font-size: 1rem;
+    color: red;
+
 }
 
 
@@ -165,6 +178,14 @@ p{
     background: white;
     
     
+}
+#plus-btn:hover{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+#plus-btn:active{
+    font-size: 32px;
+    padding-bottom: 10px;
 }
 .buyBtn{
     display: block;
@@ -300,6 +321,7 @@ p{
     text-align: center;
     margin: 26px 0;
     font-weight: bold;
+    color: black;
 }
 
 .form input{
@@ -340,8 +362,8 @@ p{
 .thanks{
     text-align: center;
     font-size: 15px;
-    /* background:#ECFDF5; */
-    color:#065F46;
+    text-shadow: 0 0 3px;
+    color:#80b918;
     padding: 5px;
     margin:10px;
 }
