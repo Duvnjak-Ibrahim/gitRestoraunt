@@ -2,30 +2,33 @@ body{
     margin: 0;
     padding: 0px;
     font-family: 'Smythe', cursive;
-    background-image: url("burger.jpg");
+    /* background-image: url("burger.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     /* object-fit: cover; */
-    background-color: rgb(36, 20, 6);
+    /* background-color: rgb(36, 20, 6);
     background-blend-mode:soft-light;
     /* filter: blur(1px); */
-    
-    background-size:100%;
-    background-position: center;
+    background:rgb(112, 56, 3);
+    /* background-size:100%; */
+    /* background-position: center;  */
     max-width: 350px;
     max-height: 100%;
     margin: 0 auto;
     color: rgb(230, 213, 213);
+    text-shadow: 0 0 2px black;
 
 }
 .container{
    
     padding-bottom: 10px;
-    width: 400px;
-    background:rgb(51, 25, 0);
+    width: 360px;
+    margin: 0 auto;
+    background:rgb(112, 56, 3);
+    
     min-height: 100vh;
-   position: relative;
+   
     
    
 }
@@ -121,6 +124,7 @@ p{
     border: none;
     background: none;
     color: rgb(241, 58, 58);
+    text-shadow: 0 0 2px black;
 }
 
 .remove1:hover,
