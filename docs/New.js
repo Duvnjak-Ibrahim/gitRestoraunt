@@ -227,7 +227,10 @@ form.addEventListener("submit",function(e){
     price2 = 0
     price3 = 0
     sum = 0
+    
+    
 })
+
 
 // SPAN WITH CLASS DOMMING 
 
