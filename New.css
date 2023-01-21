@@ -46,7 +46,7 @@ p{
     /* header */
 
 .header{
-    background: url(timothy-barlin-a7l71i87vdY-unsplash.jpg);
+    background: url(/images/timothy-barlin-a7l71i87vdY-unsplash.jpg);
     background-color: rgb(36, 20, 6);
     background-blend-mode:hard-light;
     filter: blur(1px);
