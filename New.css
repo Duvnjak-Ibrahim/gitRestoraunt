@@ -1,24 +1,14 @@
+
 body{
     margin: 0;
     padding: 0px;
     font-family: 'Smythe', cursive;
-    /* background-image: url("burger.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-    /* object-fit: cover; */
-    /* background-color: rgb(36, 20, 6);
-    background-blend-mode:soft-light;
-    /* filter: blur(1px); */
-    background:rgb(112, 56, 3);
-    /* background-size:100%; */
-    /* background-position: center;  */
-    /* max-width: 350px; */
-    /* max-height: 100%; */
+    background:rgb(112, 56, 3); 
     margin: 0 auto;
     color: rgb(230, 213, 213);
     text-shadow: 0 0 2px black;
-
+    overflow: hidden;
+    position: relative;
 }
 
 .container{
@@ -28,10 +18,10 @@ body{
     /* margin: 0 auto; */
     background:rgb(112, 56, 3);
     
-    min-height: 100vh;
+    /* min-height: 100vh; */
    position: relative;
     
-   
+   height: 100vh;
 }
 
 p{
@@ -56,6 +46,7 @@ p{
     /* background-position: center; */
     /* object-fit: cover; */
     width: auto;
+    /* height: 400px; */
     height: 80px;
     color: white;
     padding: 20px;
@@ -63,6 +54,7 @@ p{
     margin-bottom: 20px;
     
     position: relative;
+    /* height: 100vh; */
 }
 .header-div{
     display: flex;
@@ -138,6 +130,7 @@ p{
     background: none;
     color: rgb(241, 58, 58);
     text-shadow: 0 0 2px black;
+    cursor: pointer;
 }
 
 .remove1:hover,
@@ -193,7 +186,7 @@ p{
     font-size: 30px;
     font-weight: 100;
     background: white;
-    
+    cursor: pointer;
     
 }
 #plus-btn:hover{
@@ -214,6 +207,7 @@ p{
     background:greenyellow;
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 .buyBtn:active{
     width: 92%;
@@ -323,8 +317,9 @@ p{
 
 .form{
     position: absolute;
-    top:25%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
     z-index: 4;
     width: 280px;
@@ -390,6 +385,7 @@ p{
         display: flex;
         
     }
+    
     .header{
         width: 50%;
         height: 100vh;
@@ -438,9 +434,52 @@ p{
     }
     .list1,
     .list2,
-    .list3{
-        width: 90%;
+    .list3,
+    .box,
+    .buyBtn{
+        width: 80%;
         margin: 0 auto;
+    }
+
+    .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        z-index: 4;
+        width: 400px;
+        height: 400px;
+        background: white;
+    
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+    }
+    .form h1{
+        text-align: center;
+        margin: 26px 0;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .form input{
+        width: 85%;
+        margin: 10px auto;
+        padding:20px 10px;
+        display: block;
+        font-size: 15px;
+    }
+    .form button{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        padding:20px 40px;
+        background:#16DB99;
+        border: none;
+        border-radius: 2px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
     }
     
 }
