@@ -64,11 +64,18 @@ p{
     
     position: relative;
 }
-
+.header-div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 0.5em;
+}
 .header p{
     width: 300px;
     margin: 0 auto;
 }
+
 /* .fakeBlurDiv{
     width: 310px;
     height: 80px;
@@ -387,6 +394,7 @@ p{
         width: 50%;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: url(/images/ham-pic7.avif);
@@ -400,10 +408,21 @@ p{
         background-blend-mode:normal;
         /* filter: blur(1px); */
     }
+    .header-div{
+        display: flex;
+        flex-direction: column;
+    }
     .header h1{
         font-size: 3rem;
-        color: black;
+        color: wheat;
         font-weight: 900;
+        padding: 0.2em;
+    }
+    .header p{
+        font-size: 2rem;
+        color: wheat;
+        font-weight: 900;
+        padding: 0.2em;
     }
     .container{
         width: 50%;
