@@ -209,7 +209,6 @@ form.addEventListener("submit",function(e){
     form.classList.add("hidden")
     blackish.classList.add("hidden")
     list1.classList.add("hidden")
-    list1.classList.add("hidden")
     list2.classList.add("hidden")
     list3.classList.add("hidden")
     finalPrice.classList.add("hidden")
@@ -219,7 +218,8 @@ form.addEventListener("submit",function(e){
     console.log(userName);
     spanName.textContent=userName
     thanks.classList.remove("hidden")
-    form.value =""
+    document.querySelector(".form").reset()
+   
     a=0
     b=0
     c=0
@@ -230,7 +230,10 @@ form.addEventListener("submit",function(e){
     
     
 })
-
+// document.querySelector(".payBtn")
+// .addEventListener("click",function(){
+// document.querySelector(".form").reset()
+// })
 
 // SPAN WITH CLASS DOMMING 
 
