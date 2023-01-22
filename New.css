@@ -13,18 +13,23 @@ body{
     background:rgb(112, 56, 3);
     /* background-size:100%; */
     /* background-position: center;  */
-    max-width: 350px;
-    max-height: 100%;
+    /* max-width: 350px; */
+    /* max-height: 100%; */
     margin: 0 auto;
     color: rgb(230, 213, 213);
     text-shadow: 0 0 2px black;
 
 }
+.container0{
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+}
 .container{
    
     padding-bottom: 10px;
-    width: 360px;
-    margin: 0 auto;
+    /* width: 360px; */
+    /* margin: 0 auto; */
     background:rgb(112, 56, 3);
     
     min-height: 100vh;
@@ -46,15 +51,15 @@ p{
     /* header */
 
 .header{
-    background: url(/images/timothy-barlin-a7l71i87vdY-unsplash.jpg);
+    background: url(/images/360_F_542158644_HAp3idXMV7aaJaTl6EQVSg2e4b5dFZzo.jpg);
     background-color: rgb(36, 20, 6);
-    background-blend-mode:hard-light;
-    filter: blur(1px);
+    /* background-blend-mode:hard-light; */
+    /* filter: blur(1px); */
     
-    background-size:100%;
-    background-position: center;
-    object-fit: cover;
-    width: 90%;
+    /* background-size:100%; */
+    /* background-position: center; */
+    /* object-fit: cover; */
+    width: auto;
     height: 80px;
     color: whitesmoke;
     padding: 20px;
@@ -63,26 +68,26 @@ p{
     
     
 }
-.fakeBlurDiv{
+/* .fakeBlurDiv{
     width: 310px;
     height: 80px;
     position: absolute;
     top: 2%;
     margin: 0 auto;
-}
-.textHeader{
+} */
+/* .textHeader{
     position: absolute;
     color: white;
     top: 2%;
     left:37%;
     z-index: 2;
     
-}
+} */
 
-.textHeader h1,
+/* .textHeader h1,
 .textHeader p{
     text-shadow: 5px 5px 5px black;
-}
+} */
 /* **** */
 .hidden{
     display: none;
