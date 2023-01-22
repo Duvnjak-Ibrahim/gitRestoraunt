@@ -20,11 +20,7 @@ body{
     text-shadow: 0 0 2px black;
 
 }
-.container0{
-    width: 50%;
-    height: 100vh;
-    background-color: black;
-}
+
 .container{
    
     padding-bottom: 10px;
@@ -61,12 +57,17 @@ p{
     /* object-fit: cover; */
     width: auto;
     height: 80px;
-    color: whitesmoke;
+    color: white;
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
     
-    
+    position: relative;
+}
+
+.header p{
+    width: 300px;
+    margin: 0 auto;
 }
 /* .fakeBlurDiv{
     width: 310px;
@@ -115,7 +116,7 @@ p{
     border-bottom: 1px solid black;
     padding-bottom: 15px;
     padding-top: 15px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 .remove1,
@@ -375,4 +376,52 @@ p{
     color:#80b918;
     padding: 5px;
     margin:10px;
+}
+
+@media(min-width:700px){
+    body{
+        display: flex;
+        
+    }
+    .header{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(/images/ham-pic7.avif);
+        background-color: rgba(0,0,0,0.9);
+        /* border-radius: 22px; */
+        /* background-size:100%;  */
+        /* background-position: center; */
+        /* background-repeat: no-repeat; */
+        /* object-fit: cover; */
+        
+        background-blend-mode:normal;
+        /* filter: blur(1px); */
+    }
+    .header h1{
+        font-size: 3rem;
+        color: black;
+        font-weight: 900;
+    }
+    .container{
+        width: 50%;
+    }
+    .container h1{
+        font-size: 1.8rem;
+    }
+    .container p{
+        font-size: 1.5em;
+    }
+    .box{
+        width: 90%;
+    }
+    .list1,
+    .list2,
+    .list3{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
 }
